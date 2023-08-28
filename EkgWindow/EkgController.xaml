@@ -1,0 +1,25 @@
+﻿<basewindow:OtherThreadWindowBase  
+        xmlns:basewindow="clr-namespace:OtherThreadWindow.BaseWindow"
+        x:Class="OtherThreadWindow.EkgWindow.EkgController"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="EkgController"
+        AllowsTransparency="True"
+        Background="#000000"
+        WindowStartupLocation="Manual"
+        ShowInTaskbar="False"
+        WindowStyle="None">
+    <Grid Width="140">
+        <Image  gif:ImageBehavior.AnimatedSource="../Resources/EKG.gif"
+                x:Name="EkgOn"
+                Stretch="UniformToFill"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Width="120"
+                Height="86.9"/>
+    </Grid>
+</basewindow:OtherThreadWindowBase>
